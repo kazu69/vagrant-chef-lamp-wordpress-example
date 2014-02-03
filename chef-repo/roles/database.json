@@ -1,0 +1,22 @@
+{
+  "name": "database",
+  "default_attributes": {
+    "mysql": {
+      "server_root_password": "rootpassword",
+      "server_repl_password": "replpassword",
+      "server_debian_password": "debianpassword"
+    },
+    "database": {
+      "host": "localhost",
+      "username": "root"
+    }
+  },
+  "json_class": "Chef::Role",
+  "description": "Database",
+  "chef_type": "role",
+  "run_list": [
+    "recipe[mysql::server]",
+    "recipe[database::mysql]",
+    "recipe[web_app::database]"
+  ]
+}

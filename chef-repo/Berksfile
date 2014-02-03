@@ -1,0 +1,18 @@
+site :opscode
+
+group :centos_basic do
+  cookbook 'sudo'
+  cookbook 'user'
+  cookbook 'ssh_known_hosts'
+  cookbook 'apache2'
+  cookbook 'mysql'
+  cookbook 'php'
+  cookbook 'database'
+  cookbook 'yum'
+end
+
+group :devtools do
+  cookbook 'vim'
+  cookbook 'zsh'
+  cookbook 'git'
+end

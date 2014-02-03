@@ -1,0 +1,5 @@
+vendor
+.bundle
+chef-repo/cookbooks/*
+chef-repo/.chef
+chef-repo/.ruby-version

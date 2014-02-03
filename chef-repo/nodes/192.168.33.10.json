@@ -1,0 +1,8 @@
+{
+  "run_list": [
+    "role[webserver]",
+    "role[database]",
+    "role[ssh]",
+    "role[wordpress]"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ssh",
+  "json_class": "Chef::Role",
+  "description": "SSH",
+  "chef_type": "role",
+  "run_list": [
+    "recipe[web_app::commentout_yumconfg_exclude_kernel]",
+    "recipe[ssh_known_hosts]",
+    "recipe[web_app::ssh]"
+  ]
+}
